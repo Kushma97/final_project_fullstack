@@ -1,0 +1,36 @@
+<html>
+    <head><title> Browse Posts</title></head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <header><h1>Room Inspo Hub</h1>
+        <nav></nav>
+        </header>
+        <main>
+        <h2>Browse Decor Posts</h2>
+        <div class = "filters">
+            <label>Search</label>
+            <input id="searchInput" placeholder="Search by title, description or tags">
+
+            <label>Filter by Tag</label>
+            <select id = "tagFilter">
+                <option value="">All Tags</option>
+                <option value="small-space">Small Space</option>
+                <option value="budget-friendly">Budget Friendly</option>
+                <option value="diy">DIY</option>
+                <option value="aesthetic">Aesthetic</option>
+                <option value="anime"> Anime-Themed</option>
+                <option value="cozy">Cozy</option>
+                </select>
+                <button class ="btn" id ="searchBtn">Search</button>
+                <button class ="btn" id ="clearBtn">Clear</button>
+        </div>
+        <div id = "postsGrid" class ="grid"></div>
+        <div id ="lightbox" class = "lightbox">
+            <button onclick="closeLightbox()">x</button>
+            <img id = "lightboxImage" src="" alt="Preview">
+            </div>
+        </main>
+        <script src = "/js/auth.js"></script>
+        <script src = "/js/posts.js"></script>      
+    </body>
+</html>

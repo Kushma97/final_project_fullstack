@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create a Post</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Room Decor Inspiration Hub</h1>
+            <nav>
+            </nav>
+            </header>
+        <main>
+            <h2>Create a New Decor Post</h2>
+            <form id="postForm">
+                <label>Title</label>
+                <input type="text" id="title" name="title" required placeholder="Cozy LED study ....">
+                <br> <br>
+                <label>Upload Image</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+                <br><br>
+                <label>Description</label>
+                <textarea id="description" name="description" required placeholder="Describe your decor idea..."></textarea>
+                <br><br>
+                <label>Tags</label>
+                <input id="tags" name="tags" required placeholder="cozy, small-space, budget-friendly">
+                <br><br>
+                <button class="btn" type="submit">Save Post</button>
+                <p id ="message" class="message"></p>
+            </form>
+        </main>
+        <script src = "/js/auth.js"></script>
+        <script src = "/js/create.js"></script>
+    </body>
+</html>

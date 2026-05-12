@@ -1,0 +1,27 @@
+<html>
+    <head><title> Edit Posts</title></head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <header><h1>Room Inspo Hub</h1>
+        <nav></nav>
+        </header>
+        <main>
+        <h2>Edit Decor Posts</h2>
+        
+        <form id = "postForm">
+            <label>Title</label>
+            <input id="title" name="title" required>
+            <label>Upload New Image Optional</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            <label>Description</label>
+            <textarea id="description" name="description" required></textarea>
+            <label>Tags</label>
+            <input id="tags" name="tags" required>
+            <button class="btn" type="submit">Update Post</button>
+            <p id ="message" class="message"></p>
+        </form>
+        </main>
+        <script src = "/js/auth.js"></script>
+        <script src = "/js/edit.js"></script>      
+    </body>
+</html>

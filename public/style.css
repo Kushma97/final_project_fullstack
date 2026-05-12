@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(220, 212, 212);
+    color: rgba(141, 4, 4, 0.875);
+}
+header{
+    background: #7a5c58;
+    color: white;
+    padding: 18px 30px;
+    text-align: center;
+}
+nav{
+    margin-top: 12px;
+}
+nav a,
+nav button,
+nav span{
+    color: white;
+    text-decoration: none;
+    margin-right: 14px;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+main{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.decor{
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.btn{
+    display: inline-block;
+    background: #7f5d58;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 24px;
+}
+.card{
+    background: white;
+    color: #9b2424;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    max-width: 320px;
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+.card-content{
+    padding: 16px;
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.78);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.lightbox img{
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 12 px;
+    background: white;
+}
+.lightbox button{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    background: transparent;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+}
